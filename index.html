@@ -18,19 +18,19 @@
         <div class="col">
           <div class="card-complete" >
             <div class="card-header"><h2>Por hacer</h2></div>
-            <div class="card-body"></div>
+            <div class="card-body" id="todoTasks"></div>
           </div>
         </div>
         <div class="col">
           <div class="card-complete" >
             <div class="card-header"><h2>En Progreso</h2></div>
-            <div class="card-body"></div>
+            <div class="card-body" id="inProgressTasks"></div>
           </div>
         </div>
         <div class="col">
           <div class="card-complete" >
             <div class="card-header"><h2>Finalizada</h2></div>
-            <div class="card-body"></div>
+            <div class="card-body" id="doneTasks"></div>
           </div>
         </div>
       </div>
@@ -53,8 +53,10 @@
       </div>
     </aside>
 
-    <script src="libraries/moment.js"></script>
+    <script src="libraries/axios.js"></script>
+    <script src="libraries/moment.js"></script>    
 
+    <script src="api/request.js"></script>
     <script src="helpers/dates.js"></script>
     <script src="helpers/toggleModal.js"></script>
   </body>
