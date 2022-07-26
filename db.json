@@ -1,0 +1,22 @@
+{
+  "tasks":[
+    {
+      "id":"1",
+      "title":"Frontend",
+      "person":"Ligia",
+      "details":"Comienzar a aprender",
+      "state":"done",
+      "deadline":"1290410940",
+      "created":"1615352159"
+    },
+    {
+      "id":"2",
+      "title":"Backend",
+      "person":"Tina",
+      "details":"Comienzar a aprender",
+      "state":"to-do",
+      "deadline":"1290410940",
+      "created":"1615352159"
+    }
+  ]
+}
