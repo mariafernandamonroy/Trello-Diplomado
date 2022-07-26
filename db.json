@@ -6,8 +6,8 @@
       "person":"Ligia",
       "details":"Comienzar a aprender",
       "state":"done",
-      "deadline":"1290410940",
-      "created":"1615352159"
+      "deadline":"2022-07-28",
+      "created":"2022-07-22"
     },
     {
       "id":"2",
@@ -15,8 +15,8 @@
       "person":"Tina",
       "details":"Comienzar a aprender",
       "state":"to-do",
-      "deadline":"1290410940",
-      "created":"1615352159"
+      "deadline":"2022-07-28",
+      "created":"2022-07-22"
     }
   ]
 }
