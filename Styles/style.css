@@ -1,6 +1,110 @@
 body{
   background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+  font-family: Verdana, Geneva, sans-serif;
 }
-.form-control{
+h1{
+  font-size: 40px;
+  color: #410148;
+}
+h2{
+  color: rgb(108, 106, 106);
+}
+input{
   margin: 10px 0px;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.146);
+}
+.container-title-newTask{
+  display: flex;
+  align-items: center;
+}
+.btnNewTask{
+  margin-left: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(205, 51, 51, 0.924);
+  color: rgb(218, 218, 218);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.146);
+  cursor: pointer;
+}
+.btnNewTask:active{
+  background-color: rgba(12, 181, 243, 0.924);
+}
+.container-cards{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-complete{
+  background-color: rgba(225, 220, 220, 0.773);
+  border-radius: 10px;
+  width: 22rem;
+}
+.card-header{
+  background-color: rgba(225, 220, 220, 0.866);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.card-body{
+  height: 30rem;
+}
+.aside-app{
+  position: fixed;
+  top:0;
+  right: 0;
+  bottom: 0;
+  transform: translate(100%);
+  will-change: transform;
+  transition: transform 300ms ease-in-out;
+  z-index: 100;
+}
+.aside-app.active{
+  transform: initial;
+}
+.card-newTaks-complete{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.879);
+  width: 20rem;
+  height: 120vh;
+}
+.card-newTaks-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 40%;
+}
+.card-newTaks-body{
+  display: flex;
+  flex-direction: column;
+}
+.container-newtaks-buttons{
+  margin: 10px 0px ;
+  display: flex;
+  justify-content: space-between;
+}
+.btnSaveNewTask{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #01d4fe;
+  color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.146);
+  cursor: pointer;
+}
+.btnCancelNewTask{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(214, 213, 213, 0.924);
+  color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.146);
+  cursor: pointer;
 }
