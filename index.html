@@ -8,7 +8,7 @@
     <title>Mi Trello</title>
     <link rel="icon" href="images/favicon.png">
   </head>
-  <body>
+  <body id="app">
     <div class="container-title-newTask">
       <div class="col"><h1>Bienvenido a Mi Trello</h1></div>
       <div class="col"><button type="button" class="btnNewTask" id="btnNewTask">Crear nueva tarea</button></div>
@@ -54,12 +54,16 @@
     </aside>
 
     <script src="libraries/axios.js"></script>
-    <script src="libraries/moment.js"></script>   
+    <script src="libraries/moment.js"></script>
+    <script src="libraries/hammer.js"></script>  
     <script src="libraries/draggable.js"></script> 
+    
+
 
     <script src="api/request.js"></script>
     <script src="helpers/dates.js"></script>
     <script src="helpers/toggleModal.js"></script>
     <script src="helpers/draganddrop.js"></script>
+    <script src="helpers/gesturesHammer.js"></script>
   </body>
 </html>
