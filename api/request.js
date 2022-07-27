@@ -8,7 +8,6 @@ axios
 
 const showAllTask = (data) => {
   data.map((task) => createTask(task));
-  console.log(data)
 };
 
 const createTask = (task) => {
@@ -33,7 +32,6 @@ const createTask = (task) => {
     task.deadline
   )}`;
   
-  console.log(dateFormat(task.deadline))
   newTask.appendChild(taskTitle);
   newTask.appendChild(taskResponsible);
   newTask.appendChild(taskDetails);
