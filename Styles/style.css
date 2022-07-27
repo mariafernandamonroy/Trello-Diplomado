@@ -16,9 +16,24 @@ input{
   height: 30px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.146);
 }
+h3{
+  font-size: 18px;
+}
+p{
+  font-size: 12px;
+}
 .container-title-newTask{
   display: flex;
   align-items: center;
+}
+.container-title-logo{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.logoImg{
+  width: 10%;
+  margin-right: 20px;
 }
 .btnNewTask{
   margin-left: 100px;
@@ -26,7 +41,7 @@ input{
   border: none;
   border-radius: 5px;
   background-color: rgba(205, 51, 51, 0.924);
-  color: rgb(218, 218, 218);
+  color: rgb(236, 236, 236);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.146);
   cursor: pointer;
 }
@@ -36,7 +51,7 @@ input{
 .container-cards{
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 .card-complete{
   background-color: rgba(225, 220, 220, 0.773);
@@ -50,7 +65,7 @@ input{
   justify-content: center;
 }
 .card-body{
-  height: 45rem;
+  min-height: 180vh;
 }
 .aside-app{
   position: fixed;
@@ -58,13 +73,8 @@ input{
   right: 0;
   bottom: 0;
   display: none;
-  /* transform: translate(100%);
-  will-change: transform;
-  transition: transform 300ms ease-in-out;
-  z-index: 100; */
 }
 .aside-app.active{
-  /* transform: initial; */
   display: block;
 }
 .card-newTaks-complete{

@@ -31,11 +31,19 @@ const createTask = (task) => {
   taskDate.innerHTML = `<span class= "card-task__date">Plazo:</span> ${dateFormat(
     task.deadline
   )}`;
+
+  let taskCreateDate = document.createElement("p");
+  taskCreateDate.classList.add("card-task__createDate");
+  taskCreateDate.innerHTML = `<span class= "card-task__date">Creación:</span> ${dateFormat(
+    task.created
+  )}`;
   
   newTask.appendChild(taskTitle);
-  newTask.appendChild(taskResponsible);
   newTask.appendChild(taskDetails);
+  newTask.appendChild(taskResponsible);
   newTask.appendChild(taskDate);
+  newTask.appendChild(taskCreateDate);
+
 
   let columnToDo = document.querySelector("#todoTasks");
   let columnInProgress = document.querySelector("#inProgressTask");

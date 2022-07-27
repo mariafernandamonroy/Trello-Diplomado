@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="Styles/style.css" rel="stylesheet" type="text/css" />
     
-    <title>Mi Trello</title>
+    <title>Trella</title>
     <link rel="icon" href="images/favicon.png">
   </head>
   <body id="app">
     <div class="container-title-newTask">
-      <div class="col"><h1>Bienvenido a Mi Trello</h1></div>
-      <div class="col"><button type="button" class="btnNewTask" id="btnNewTask">Crear nueva tarea</button></div>
+      <div class="container-title-logo"><img src="images/favicon.png" alt="Imagen logo" class="logoImg"><h1>Trella</h1></div>
+      <div class="contariner-btn"><button type="button" class="btnNewTask" id="btnNewTask">Crear nueva tarea</button></div>
     </div>
     <main>
       <div class="container-cards">
@@ -40,16 +40,16 @@
       <div class="container-NewTaskForm">
         <div class="card-newTaks-complete" >
           <div class="card-newTaks-header"><h2>Nueva Tarea</h2></div>
-          <div class="card-newTaks-body">
-            <Input class="form-control" type="text" placeholder="Título de la tarea"></Input>
-            <Input class="form-control" type="text" placeholder="Descripción de la tarea"></Input>
-            <Input class="form-control" type="text" placeholder="Responsable"></Input>
-            <Input class="form-control" type="date" placeholder="Fecha de entrega"></Input>
+          <form class="card-newTaks-body" id="formNewTask">
+            <Input class="form-control" id="titleTask" type="text" placeholder="Título de la tarea"></Input>
+            <Input class="form-control" id="detailsTask" type="text" placeholder="Descripción de la tarea"></Input>
+            <Input class="form-control" id="responsibleTask" type="text" placeholder="Responsable"></Input>
+            <Input class="form-control" id="deadLineTask" type="date" placeholder="Fecha de entrega"></Input>
             <div class="container-newtaks-buttons">
               <div class="col"><button type="submit" class="btnSaveNewTask" id="btnSaveNewTask">Guardar</button></div>
               <div class="col"><button type="reset" class="btnCancelNewTask" id="btnCancelNewTask">Cancelar</button></div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </aside>
@@ -62,6 +62,7 @@
 
     <script src="api/request.js"></script>
     <script src="helpers/dates.js"></script>
+    <script src="helpers/newTask.js"></script>
     <script src="helpers/toggleModal.js"></script>
     <script src="helpers/draganddrop.js"></script>
     <script src="helpers/gesturesHammer.js"></script>
