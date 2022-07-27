@@ -7,3 +7,5 @@ En este proyecto se desarrolla una aplicación que simula el comportamiento de o
 - Momentjs
 - Draggable
 - My JSON Server
+
+`r fa("r-project", fill = "steelblue")` hola
